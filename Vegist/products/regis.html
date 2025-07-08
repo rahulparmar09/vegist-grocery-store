@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="bg-white ">
+        <div class="max-w-screen-xl mx-auto flex items-center justify-between px-4 py-5">
+
+            <!-- Left: Logo -->
+            <div class="flex items-center">
+                <img src="https://vegina-store.myshopify.com/cdn/shop/files/logo-4.svg?v=1676488072&width=352"
+                    class="h-auto w-[120px] mr-2" alt="Logo">
+                <!-- <span class="text-xl font-bold text-gray-800">FlyonUI</span> -->
+            </div>
+
+            <!-- Center: Nav Links (Desktop) -->
+            <ul class="hidden lg:flex space-x-6 text-[#222222]  text-[18px]">
+                <li class="relative group">
+                    <a href="/index.html" class="  hover:text-blue-600 flex items-center gap-1">
+                        HOME <i class="fa-solid fa-chevron-down text-xs ms-1 mt-[2px]"></i>
+                    </a>
+                    <div
+                        class="absolute hidden group-hover:block text-[gray] text-[15px] bg-white border shadow-md z-50  min-w-[150px]">
+                        <ul class="ms-2">
+                            <li><a href="/products/dryfruit.html"
+                                    class="block px-4 py-2 hover:text-[#c28c2e]">Dryfruits</a></li>
+                            <li><a href="/products/fruit.html" class="block px-4 py-2 hover:text-[#c28c2e]">Fruit</a>
+                            </li>
+                            <li><a href="/products/vegetables.html"
+                                    class="block px-4 py-2 hover:text-[#c28c2e]">Vegetable</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <!-- <li><a href="#" class="hover:text-blue-600">SHOP</a></li> -->
+                <li class="relative group">
+                    <a href="#" class="hover:text-blue-600 flex items-center gap-1">
+                        COLLECTION
+                        <i class="fa-solid fa-chevron-down text-xs ms-1 mt-[2px]"></i>
+                    </a>
+
+                    <!-- Full screen left aligned dropdown -->
+                    <div
+                        class="fixed top-[65px] left-0 hidden group-hover:flex transition-all duration-200 bg-white shadow-md z-50 min-h-[300px] min-w-[100vw]">
+
+                        <!-- Content inside dropdown -->
+                        <div class="flex max-w-screen-xl mx-auto w-full px-6 py-">
+                            <!-- Image 1 -->
+                            <div class="h-[300px] w-[400px] px-2 text-center">
+                                <img src="https://vegina-store.myshopify.com/cdn/shop/files/banner5.jpg?v=1741610584&width=832"
+                                    class="h-[250px] w-full object-cover rounded-md" alt="Banner 1">
+                                <p class="mt-2 font-semibold text-sm text-gray-700">Fresh Fruits</p>
+                            </div>
+
+                            <!-- Image 2 -->
+                            <div class="h-[300px] w-[400px] px-2 text-center">
+                                <img src="https://vegina-store.myshopify.com/cdn/shop/files/banner6.jpg?v=1741610584&width=832"
+                                    class="h-[250px] w-full object-cover rounded-md" alt="Banner 2">
+                                <p class="mt-2 font-semibold text-sm text-gray-700">Juice Basket</p>
+                            </div>
+
+                            <!-- Image 3 -->
+                            <div class="h-[300px] w-[400px] px-2 text-center">
+                                <img src="https://vegina-store.myshopify.com/cdn/shop/files/banner4_324b1123-35da-4f44-b323-b8d10e2141c9.jpg?v=1741610584&width=832"
+                                    class="h-[250px] w-full object-cover rounded-md" alt="Banner 3">
+                                <p class="mt-2 font-semibold text-sm text-gray-700">Organic Combo</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+
+                <!-- <li><a href="#" class="hover:text-blue-600">SERVICES</a></li> -->
+                <li class="relative group">
+                    <a href="#" class="  hover:text-blue-600 flex items-center gap-1">
+                        SHOP <i class="fa-solid fa-chevron-down text-xs ms-1 mt-[2px]"></i>
+                    </a>
+                    <div class="fixed top-[65px] left-0 hidden group-hover:flex bg-white border shadow-md z-50  w-full">
+                        <div class="flex max-w-screen-xl mx-auto w-full text-[gray] gap-9 justify-evenly">
+                            <ul class="px-4 py-2 text-[15px]  space-y-4">
+                                <h1 class="text-lg text-black font-bold">Fresh Food</h1>
+                                <li><a href="#" class="block  hover:text-[#c28c2e]">Fruit & nut</a></li>
+                                <li><a href="#" class="block  hover:text-[#c28c2e]">Snack foods</a></li>
+                                <li><a href="#" class="block  hover:text-[#c28c2e]">Organics nut gifts</a></li>
+                                <li><a href="#" class="block  hover:text-[#c28c2e]">Non-dairy</a></li>
+                                <li><a href="#" class="block  hover:text-[#c28c2e]">Blackberry Organic</a></li>
+                                <li><a href="#" class="block  hover:text-[#c28c2e]">Fresh & healthy food</a></li>
+                            </ul>
+                            <ul class="px-4 py-2 text-[15px]  space-y-4">
+                                <h1 class="text-lg text-black font-bold">Mixedfruits</h1>
+                                <li><a href="#" class="block  hover:text-[#c28c2e]">Oranges</a></li>
+                                <li><a href="#" class="block  hover:text-[#c28c2e]">Ghee beverages</a></li>
+                                <li><a href="#" class="block  hover:text-[#c28c2e]">Ranch salad</a></li>
+                                <li><a href="#" class="block  hover:text-[#c28c2e]">Fresh avocado</a></li>
+                                <li><a href="#" class="block  hover:text-[#c28c2e]">Fresh blueberry</a></li>
+                                <li><a href="#" class="block  hover:text-[#c28c2e]">Fresh apple (5kg)</a></li>
+                            </ul>
+                            <ul class="px-4 py-2 text-[15px]  space-y-4">
+                                <h1 class="text-lg text-black font-bold">Bananas & plantains</h1>
+                                <li><a href="#" class="block  hover:text-[#c28c2e]">Fresh gala</a></li>
+                                <li><a href="#" class="block  hover:text-[#c28c2e]">Fifts mixed fruits</a></li>
+                                <li><a href="#" class="block  hover:text-[#c28c2e]">Fresh organic</a></li>
+                                <li><a href="#" class="block  hover:text-[#c28c2e]">Vegetable tomato</a></li>
+                                <li><a href="#" class="block  hover:text-[#c28c2e]">Fresh litchi 100% organic</a></li>
+                                <li><a href="#" class="block  hover:text-[#c28c2e]">Fresh blueberry</a></li>
+                            </ul>
+                            <ul class="px-4 py-2 text-[15px]  space-y-4">
+                                <h1 class="text-lg text-black font-bold">Apples berries</h1>
+                                <li><a href="#" class="block  hover:text-[#c28c2e]">Pears produce</a></li>
+                                <li><a href="#" class="block  hover:text-[#c28c2e]">Fresh green orange</a></li>
+                                <li><a href="#" class="block  hover:text-[#c28c2e]">Blackberry 100% organic</a></li>
+                                <li><a href="#" class="block  hover:text-[#c28c2e]">Fresh grassben</a></li>
+                                <li><a href="#" class="block  hover:text-[#c28c2e]">Dell roll cake</a></li>
+                                <li><a href="#" class="block  hover:text-[#c28c2e]">Fresh apple</a></li>
+                            </ul>
+
+
+
+
+                        </div>
+                    </div>
+                </li>
+
+                <!-- <li><a href="#" class="hover:text-blue-600">PAGES</a></li> -->
+                <li class="relative group">
+                    <a href="#" class="  hover:text-blue-600 flex items-center gap-1">
+                        PAGES <i class="fa-solid fa-chevron-down text-xs ms-1 mt-[2px]"></i>
+                    </a>
+                    <div
+                        class="absolute hidden group-hover:block text-[gray] text-[15px] bg-white border shadow-md z-50  min-w-[150px]">
+                        <ul class="ms-2">
+                            <li><a href="/pages/about.html" class="block px-4 py-2 hover:text-[#c28c2e]">About us</a>
+                            </li>
+                            <li><a href="/pages/contact.html" class="block px-4 py-2 hover:text-[#c28c2e]">Contact
+                                    us</a></li>
+                            <li><a href="/pages/faq.html" class="block px-4 py-2 hover:text-[#c28c2e]">Faq's</a></li>
+                            <li><a href="/pages/policy.html" class="block px-4 py-2 hover:text-[#c28c2e]">Payment
+                                    policy</a></li>
+                            <li><a href="/pages/policy.html" class="block px-4 py-2 hover:text-[#c28c2e]">Privacy
+                                    policy</a></li>
+                            <li><a href="/pages/policy.html" class="block px-4 py-2 hover:text-[#c28c2e]">Return
+                                    policy</a></li>
+                            <li><a href="/pages/term&con.html" class="block px-4 py-2 hover:text-[#c28c2e]">Terms &<br>
+                                    conditions</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li><a href="#" class="hover:text-blue-600">BUY VEGIST</a></li>
+                <li><a href="blog.html" class="hover:text-green-600 block">BLOG</a></li>
+
+            </ul>
+
+
+            <!-- Right: Icons -->
+            <div class="lg:flex space-x-5 text-2xl text-gray-700">
+                <button data-drawer-target="mobile-drawer" data-drawer-show="mobile-drawer"
+                    aria-controls="mobile-drawer"
+                    class="lg:hidden text-gray-700 hover:text-blue-600 focus:outline-none">
+                    <i class="fa-solid fa-bars text-2xl"></i>
+                </button>
+                <i class="fa-solid relative fa-magnifying-glass hover:text-blue-600 cursor-pointer seach-open"
+                    data-modal-target="top-right-modal" data-modal-toggle="top-right-modal"></i>
+
+                <i class="fa-solid fa-user hover:text-blue-600 cursor-pointer" id="dropdownDefaultButton"
+                    data-dropdown-toggle="dropdown"></i>
+
+
+                <i class="fa-solid fa-bag-shopping hover:text-blue-600 cursor-pointer cart"></i>
+
+            </div>
+
+
+
+            <!-- Login -->
+            <div id="dropdown"
+                class=" hidden absolute z-50  bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 ">
+                <ul class="py-2 px-2 text-sm  " aria-labelledby="dropdownDefaultButton">
+                    <li>
+                        <a href="#" id="Uname" class="block px-4 py-2 hover:text-[#c28c2e]">Username</a>
+                    </li>
+                    <li>
+                        <a href="demo.html" class="block px-4 py-2  hover:text-[#c28c2e]">Sign in</a>
+                    </li>
+                    <li>
+                        <a href="#" id="logout" class="block px-4 py-2 hover:text-[#c28c2e]">Log
+                            out</a>
+                    </li>
+                </ul>
+            </div>
+
+
+
+
+
+
+            <!-- search modal -->
+            <!-- Static Modal -->
+            <div class="seach-modal hidden">
+                <div
+                    class="fixed top-0 left-0 right-1 z-50 w-full p-4 overflow-x-hidden overflow-y-auto h-[calc(100%-1rem)] max-h-full">
+                    <div class="relative w-full max-w-2xl mx-auto max-h-full">
+                        <!-- Modal content -->
+                        <div class="relative bg-white rounded-lg shadow-sm">
+                            <!-- Modal header -->
+                            <div
+                                class="flex items-center justify-between p-4 md:p-5 border-b rounded-t border-gray-200">
+                                <h3 class="text-xl mx-auto max-w-md text-black font-bold">
+                                    What are you looking for?
+                                </h3>
+                                <!-- Optional: remove button if not needed -->
+                                <button id="close-modal"
+                                    class="text-gray-400 close-modall bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 inline-flex justify-center items-center">
+
+                                    <i class="fa-solid fa-xmark text-2xl"></i>
+                                </button>
+                            </div>
+
+                            <!-- Modal body -->
+                            <div class="p-4 md:p-5 space-y-4">
+                                <form class="max-w-md mx-auto pb-5">
+                                    <div class="flex">
+                                        <div class="relative w-full">
+                                            <input type="search" id="location-search"
+                                                placeholder="Search our store item" required
+                                                class="block w-full p-3 pe-12 text-sm text-black bg-white border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 placeholder:text-gray-500" />
+                                            <button type="submit"
+                                                class="absolute inset-y-0 end-0 flex items-center px-3 text-gray-500 hover:text-blue-600">
+                                                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2"
+                                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        d="M21 21l-4.35-4.35M17 11A6 6 0 1 1 5 11a6 6 0 0 1 12 0Z">
+                                                    </path>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Drawer (Mobile) -->
+    <!-- drawer component -->
+    <div id="mobile-drawer"
+        class="fixed top-0 left-0 z-40 w-64 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-white"
+        tabindex="-1" aria-labelledby="drawer-label">
+        <div class="flex justify-between items-center mb-6">
+            <h5 class="text-lg font-bold text-gray-800">Menu</h5>
+            <button type="button" data-drawer-hide="mobile-drawer" aria-controls="mobile-drawer"
+                class="text-gray-600 hover:text-red-500 text-xl">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+
+        <!-- Navigation Items -->
+        <ul class="space-y-4 text-gray-700 font-medium">
+            <!-- HOME Dropdown -->
+            <li>
+                <button onclick="toggleDropdown('homeDropdown')" class="flex w-full justify-between items-center">
+                    HOME <i class="fa-solid fa-chevron-down text-xs"></i>
+                </button>
+                <ul id="homeDropdown" class="hidden pl-4 mt-2 space-y-2 text-sm text-gray-600">
+                    <li><a href="/index.html" class="block hover:text-green-600">Home</a></li>
+                    <li><a href="/products/dryfruit.html" class="block hover:text-green-600">Dryfruits</a></li>
+                    <li><a href="/products/fruit.html" class="block hover:text-green-600">Fruit</a></li>
+                    <li><a href="/products/vegetables.html" class="block hover:text-green-600">Vegetable</a></li>
+                </ul>
+            </li>
+
+            <!-- COLLECTION Link -->
+            <li><a href="#" class="hover:text-green-600 block">COLLECTION</a></li>
+
+            <!-- SHOP Dropdown -->
+            <li>
+                <button onclick="toggleDropdown('shopDropdown')" class="flex w-full justify-between items-center">
+                    SHOP <i class="fa-solid fa-chevron-down text-xs"></i>
+                </button>
+                <ul id="shopDropdown" class="hidden pl-4 mt-2 space-y-2 text-sm text-gray-600">
+
+                    <!-- Fresh Food -->
+                    <li>
+                        <button onclick="toggleDropdown('freshDropdown')"
+                            class="flex w-full justify-between items-center">
+                            Fresh Food <i class="fa-solid fa-chevron-down text-xs"></i>
+                        </button>
+                        <ul id="freshDropdown" class="hidden pl-4 mt-2 space-y-2">
+                            <li><a href="#" class="block  hover:text-green-600">Fruit & nut</a></li>
+                            <li><a href="#" class="block  hover:text-green-600">Snack foods</a></li>
+                            <li><a href="#" class="block  hover:text-green-600">Organics nut gifts</a></li>
+                            <li><a href="#" class="block  hover:text-green-600">Non-dairy</a></li>
+                            <li><a href="#" class="block  hover:text-green-600">Blackberry Organic</a></li>
+                            <li><a href="#" class="block  hover:text-green-600">Fresh & healthy food</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Mixedfruits -->
+                    <li>
+                        <button onclick="toggleDropdown('mixedDropdown')"
+                            class="flex w-full justify-between items-center">
+                            Mixedfruits <i class="fa-solid fa-chevron-down text-xs"></i>
+                        </button>
+                        <ul id="mixedDropdown" class="hidden pl-4 mt-2 space-y-2">
+                            <li><a href="#" class="block hover:text-green-600">Oranges</a></li>
+                            <li><a href="#" class="block hover:text-green-600">Ghee beverages</a></li>
+                            <li><a href="#" class="block  hover:text-green-600">Ranch salad</a></li>
+                            <li><a href="#" class="block  hover:text-green-600">Fresh avocado</a></li>
+                            <li><a href="#" class="block  hover:text-green-600">Fresh blueberry</a></li>
+                            <li><a href="#" class="block  hover:text-green-600">Fresh apple (5kg)</a></li>
+
+                        </ul>
+                    </li>
+
+                    <!-- Bananas & plantains -->
+                    <li>
+                        <button onclick="toggleDropdown('bananaDropdown')"
+                            class="flex w-full justify-between items-center">
+                            Bananas & plantains <i class="fa-solid fa-chevron-down text-xs"></i>
+                        </button>
+                        <ul id="bananaDropdown" class="hidden pl-4 mt-2 space-y-2">
+                            <li><a href="#" class="block  hover:text-green-600">Fresh gala</a></li>
+                            <li><a href="#" class="block  hover:text-green-600">Fifts mixed fruits</a></li>
+                            <li><a href="#" class="block  hover:text-green-600">Fresh organic</a></li>
+                            <li><a href="#" class="block  hover:text-green-600">Vegetable tomato</a></li>
+                            <li><a href="#" class="block  hover:text-green-600">Fresh litchi 100% organic</a></li>
+                            <li><a href="#" class="block  hover:text-green-600">Fresh blueberry</a></li>
+
+                        </ul>
+                    </li>
+
+                    <!-- Apples berries -->
+                    <li>
+                        <button onclick="toggleDropdown('appleDropdown')"
+                            class="flex w-full justify-between items-center">
+                            Apples berries <i class="fa-solid fa-chevron-down text-xs"></i>
+                        </button>
+                        <ul id="appleDropdown" class="hidden pl-4 mt-2 space-y-2">
+                            <li><a href="#" class="block  hover:text-green-600">Pears produce</a></li>
+                            <li><a href="#" class="block  hover:text-green-600">Fresh green orange</a></li>
+                            <li><a href="#" class="block  hover:text-green-600">Blackberry 100% organic</a></li>
+                            <li><a href="#" class="block  hover:text-green-600">Fresh grassben</a></li>
+                            <li><a href="#" class="block  hover:text-green-600">Dell roll cake</a></li>
+                            <li><a href="#" class="block  hover:text-green-600">Fresh apple</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </li>
+
+            </li>
+
+            <!-- PAGES Dropdown -->
+            <li>
+                <button onclick="toggleDropdown('pagesDropdown')" class="flex w-full justify-between items-center">
+                    PAGES <i class="fa-solid fa-chevron-down text-xs"></i>
+                </button>
+                <ul id="pagesDropdown" class="hidden pl-4 mt-2 space-y-2 text-sm text-gray-600">
+                    <li><a href="/pages/about.html" class="block hover:text-green-600">About Us</a></li>
+                    <li><a href="/pages/contact.html" class="block hover:text-green-600">Contact Us</a></li>
+                    <li><a href="/pages/faq.html" class="block hover:text-green-600">FAQs</a></li>
+                    <li><a href="/pages/policy.html" class="block hover:text-green-600">Privacy Policy</a></li>
+                    <li><a href="/pages/policy.html" class="block hover:text-green-600">Payment policy</a></li>
+                    <li><a href="/pages/policy.html" class="block hover:text-green-600">Return policy</a></li>
+                    <li><a href="/pages/term&con.html" class="block hover:text-green-600">Terms &<br> conditions</a>
+                    </li>
+
+                </ul>
+            </li>
+
+            <!-- Static Link -->
+            <li><a href="#" class="hover:text-green-600 block">BUY VEGIST</a></li>
+            <li><a href="blog.html" class="hover:text-green-600 block">BLOG</a></li>
+
+        </ul>
+
+    </div>
+    <!-- navbar end -->
+
+
+    <!-- Create Account Section -->
+    <section class="py-3 px-4 bg-white">
+        <div class="flex flex-col items-center justify-center">
+            <a href="#" class="flex items-center mb-6 text-2xl font-semibold text-gray-900">
+                <img class="w-24 h-auto mr-2"
+                    src="https://grocerystore-shop.myshopify.com/cdn/shop/files/logo-10.svg?v=1676482749&width=352"
+                    alt="logo">
+            </a>
+            <div class="w-full bg-white rounded-lg shadow-md border sm:max-w-md xl:p-0">
+                <div class="p-6 space-y-6">
+                    <h1 class="text-xl font-bold text-gray-900 md:text-2xl">
+                        Create an account
+                    </h1>
+                    <form class="space-y-4" id="regi">
+                        <div>
+                            <label for="name" class="block mb-2 text-sm font-medium text-gray-700">Full Name</label>
+                            <input type="text" name="name" id="name"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5"
+                                placeholder="e.g Bonnie green" required>
+                        </div>
+                        <div>
+                            <label for="email" class="block mb-2 text-sm font-medium text-gray-700">Email</label>
+                            <input type="email" name="email" id="email"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5"
+                                placeholder="name@example.com" required>
+                        </div>
+                        <div>
+                            <label for="password" class="block mb-2 text-sm font-medium text-gray-700">Password</label>
+                            <input type="password" name="password" id="password" placeholder="••••••••"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5"
+                                required>
+                        </div>
+                        <div>
+                            <label for="confirm-password" class="block mb-2 text-sm font-medium text-gray-700">Confirm
+                                Password</label>
+                            <input type="password" name="confirm-password" id="confirm-password"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5"
+                                placeholder="••••••••" required>
+                        </div>
+                        <div class="flex items-start">
+                            <input id="terms" type="checkbox"
+                                class="w-4 h-4 text-green-600 bg-gray-100 border-gray-300 rounded focus:ring-green-500">
+                            <label for="terms" class="ml-2 text-sm text-gray-600">I accept the <a href="#"
+                                    class="text-green-600 hover:underline">Terms and Conditions</a></label>
+                        </div>
+                        <button type="submit"
+                            class="w-full text-white bg-green-600 hover:bg-green-700 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
+                            Create account
+                        </button>
+                        <p class="text-sm font-light text-gray-500">
+                            Already have an account? <a href="demo.html" class="text-green-600 hover:underline">Login
+                                here</a>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="mt-20 bg-[#faf5f1]">
+        <div class="max-w-[1440px] container mx-auto px-4 py-24">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+                <!-- Brand Column -->
+                <div class="lg:col-span-1">
+                    <div class="flex items-center gap-2 mb-5">
+                        <img src="https://grocerystore-shop.myshopify.com/cdn/shop/files/logo-13.svg?v=1676482751&width=352"
+                            alt="" class="h-12">
+                    </div>
+                    <p class="text-[#4F5665] mb-8 font-medium">
+
+                        There are many variations of passages of
+                        Lorem Ipsum item available, but the majority
+                        have suffered alteration in some.
+                    </p>
+                    <div class="flex gap-4 text-xl cursor-pointer text-green-500">
+
+                        <i class="fa-brands fa-twitter "></i>
+                        <i class="fa-brands fa-facebook "></i>
+                        <i class="fa-brands fa-square-instagram"></i>
+                        <i class="fa-brands fa-square-whatsapp"></i>
+                        <i class="fa-brands fa-youtube"></i>
+
+                    </div>
+                    <p class="text-[#AFB5C0] mt-8">©2020Vegist</p>
+                </div>
+
+                <!-- Product Column -->
+                <div>
+                    <h3 class="font-[600] text-[#4B9634] text-xl uppercase mb-6">Product</h3>
+                    <ul class="space-y-4  text-[#6F6F6F] font-medium">
+                        <li><a href="#" class="hover:text-[#F53855]">Download</a></li>
+                        <li><a href="#" class="hover:text-[#F53855]">Pricing</a></li>
+                        <li><a href="#" class="hover:text-[#F53855]">Locations</a></li>
+                        <li><a href="#" class="hover:text-[#F53855]">Server</a></li>
+                        <li><a href="#" class="hover:text-[#F53855]">Countries</a></li>
+                        <li><a href="#" class="hover:text-[#F53855]">Blog</a></li>
+                    </ul>
+                </div>
+
+                <!-- Product Column -->
+                <div>
+                    <h3 class="font-[600] text-[#4B9634] text-xl uppercase mb-6">Categories</h3>
+                    <ul class="space-y-4  text-[#6F6F6F] font-medium">
+                        <li><a href="#" class="hover:text-[#F53855]">Fresh fruit</a></li>
+                        <li><a href="#" class="hover:text-[#F53855]">Fresh vegetable</a></li>
+                        <li><a href="#" class="hover:text-[#F53855]">Organic dryfruits</a></li>
+                        <li><a href="#" class="hover:text-[#F53855]">Haldi poowder</a></li>
+                        <li><a href="#" class="hover:text-[#F53855]">Fresh juice</a></li>
+                        <li><a href="#" class="hover:text-[#F53855]">Dairy & cheese</a></li>
+                    </ul>
+                </div>
+
+                <!-- Engage Column -->
+                <div>
+                    <h3 class="font-[600] text-[#4B9634] text-xl  uppercase mb-6">About vegist</h3>
+                    <ul class="space-y-4  text-[#6F6F6F] font-medium">
+                        <li><a href="#" class="hover:text-[#F53855]">FAQ</a></li>
+                        <li><a href="#" class="hover:text-[#F53855]">Tutorials</a></li>
+                        <li><a href="#" class="hover:text-[#F53855]">About Us</a></li>
+                        <li><a href="#" class="hover:text-[#F53855]">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-[#F53855]">Return Policy</a></li>
+                        <li><a href="#" class="hover:text-[#F53855]">Terms of Service</a></li>
+                    </ul>
+                </div>
+
+                <!-- Earn Money Column -->
+                <div>
+                    <h3 class="font-[600] text-[#4B9634] text-xl uppercase  mb-6">My account</h3>
+                    <ul class="space-y-4 text-[#6F6F6F] font-medium">
+                        <li><a href="#" class="hover:text-[#F53855]">My cart</a></li>
+                        <li><a href="#" class="hover:text-[#F53855]">My Order </a></li>
+                        <li><a href="#" class="hover:text-[#F53855]">My wishlist</a></li>
+                        <li><a href="#" class="hover:text-[#F53855]">My address</a></li>
+                        <li><a href="#" class="hover:text-[#F53855]">My history</a></li>
+                        <li><a href="#" class="hover:text-[#F53855]">My payment</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="/js/regis.js"></script>
+
+
+</body>
+
+</html>

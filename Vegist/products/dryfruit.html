@@ -1,0 +1,1303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dryfruits</title>
+    <link rel="icon" type="image/png"
+        href="vegina-store.myshopify.com/cdn/shop/files/favicon2_7e11cc82-285e-47b4-83a0-91cf94ef2565.png?crop=center&height=32&v=1614308046&width=32">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="bg-white ">
+        <div class="max-w-screen-xl mx-auto flex items-center justify-between px-4 py-5">
+
+            <!-- Left: Logo -->
+            <div class="flex items-center">
+                <img src="https://vegina-store.myshopify.com/cdn/shop/files/logo-4.svg?v=1676488072&width=352"
+                    class="h-auto w-[120px] mr-2" alt="Logo">
+                <!-- <span class="text-xl font-bold text-gray-800">FlyonUI</span> -->
+            </div>
+
+            <!-- Center: Nav Links (Desktop) -->
+            <ul class="hidden lg:flex space-x-6 text-[#222222]  text-[18px]">
+                <li class="relative group">
+                    <a href="#" target="_blank" class=" hover:text-blue-600 flex items-center gap-1">
+                        HOME <i class="fa-solid fa-chevron-down text-xs ms-1 mt-[2px]"></i>
+                    </a>
+                    <div
+                        class="absolute hidden group-hover:block text-[gray] text-[15px] bg-white border shadow-md z-50  min-w-[150px]">
+                        <ul class="ms-2">
+                            <li><a href="/index.html" class="block px-4 py-2 hover:text-[#c28c2e]">Home</a></li>
+                            <li><a href="fruit.html" class="block px-4 py-2 hover:text-[#c28c2e]">Fruit</a></li>
+                            <li><a href="vegetables.html" class="block px-4 py-2 hover:text-[#c28c2e]">Vegetable</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <!-- <li><a href="#" class="hover:text-blue-600">SHOP</a></li> -->
+                <li class="relative group">
+                    <a href="#" class="hover:text-blue-600 flex items-center gap-1">
+                        COLLECTION
+                        <i class="fa-solid fa-chevron-down text-xs ms-1 mt-[2px]"></i>
+                    </a>
+
+                    <!-- Full screen left aligned dropdown -->
+                    <div
+                        class="fixed top-[65px] left-0 hidden group-hover:flex transition-all duration-200 bg-white shadow-md z-50 min-h-[300px] min-w-[100vw]">
+
+                        <!-- Content inside dropdown -->
+                        <div class="flex max-w-screen-xl mx-auto w-full px-6 py-">
+                            <!-- Image 1 -->
+                            <div class="h-[300px] w-[400px] px-2 text-center">
+                                <img src="https://vegina-store.myshopify.com/cdn/shop/files/banner5.jpg?v=1741610584&width=832"
+                                    class="h-[250px] w-full object-cover rounded-md" alt="Banner 1">
+                                <p class="mt-2 font-semibold text-sm text-gray-700">Fresh Fruits</p>
+                            </div>
+
+                            <!-- Image 2 -->
+                            <div class="h-[300px] w-[400px] px-2 text-center">
+                                <img src="https://vegina-store.myshopify.com/cdn/shop/files/banner6.jpg?v=1741610584&width=832"
+                                    class="h-[250px] w-full object-cover rounded-md" alt="Banner 2">
+                                <p class="mt-2 font-semibold text-sm text-gray-700">Juice Basket</p>
+                            </div>
+
+                            <!-- Image 3 -->
+                            <div class="h-[300px] w-[400px] px-2 text-center">
+                                <img src="https://vegina-store.myshopify.com/cdn/shop/files/banner4_324b1123-35da-4f44-b323-b8d10e2141c9.jpg?v=1741610584&width=832"
+                                    class="h-[250px] w-full object-cover rounded-md" alt="Banner 3">
+                                <p class="mt-2 font-semibold text-sm text-gray-700">Organic Combo</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+
+                <!-- <li><a href="#" class="hover:text-blue-600">SERVICES</a></li> -->
+                <li class="relative group">
+                    <a href="#" class="  hover:text-blue-600 flex items-center gap-1">
+                        SHOP <i class="fa-solid fa-chevron-down text-xs ms-1 mt-[2px]"></i>
+                    </a>
+                    <div class="fixed top-[65px] left-0 hidden group-hover:flex bg-white border shadow-md z-50  w-full">
+                        <div class="flex max-w-screen-xl mx-auto w-full text-[gray] gap-9 justify-evenly">
+                            <ul class="px-4 py-2 text-[15px]  space-y-4">
+                                <h1 class="text-lg text-black font-bold">Fresh Food</h1>
+                                <li><a href="#" class="block  hover:text-[#c28c2e]">Fruit & nut</a></li>
+                                <li><a href="#" class="block  hover:text-[#c28c2e]">Snack foods</a></li>
+                                <li><a href="#" class="block  hover:text-[#c28c2e]">Organics nut gifts</a></li>
+                                <li><a href="#" class="block  hover:text-[#c28c2e]">Non-dairy</a></li>
+                                <li><a href="#" class="block  hover:text-[#c28c2e]">Blackberry Organic</a></li>
+                                <li><a href="#" class="block  hover:text-[#c28c2e]">Fresh & healthy food</a></li>
+                            </ul>
+                            <ul class="px-4 py-2 text-[15px]  space-y-4">
+                                <h1 class="text-lg text-black font-bold">Mixedfruits</h1>
+                                <li><a href="#" class="block  hover:text-[#c28c2e]">Oranges</a></li>
+                                <li><a href="#" class="block  hover:text-[#c28c2e]">Ghee beverages</a></li>
+                                <li><a href="#" class="block  hover:text-[#c28c2e]">Ranch salad</a></li>
+                                <li><a href="#" class="block  hover:text-[#c28c2e]">Fresh avocado</a></li>
+                                <li><a href="#" class="block  hover:text-[#c28c2e]">Fresh blueberry</a></li>
+                                <li><a href="#" class="block  hover:text-[#c28c2e]">Fresh apple (5kg)</a></li>
+                            </ul>
+                            <ul class="px-4 py-2 text-[15px]  space-y-4">
+                                <h1 class="text-lg text-black font-bold">Bananas & plantains</h1>
+                                <li><a href="#" class="block  hover:text-[#c28c2e]">Fresh gala</a></li>
+                                <li><a href="#" class="block  hover:text-[#c28c2e]">Fifts mixed fruits</a></li>
+                                <li><a href="#" class="block  hover:text-[#c28c2e]">Fresh organic</a></li>
+                                <li><a href="#" class="block  hover:text-[#c28c2e]">Vegetable tomato</a></li>
+                                <li><a href="#" class="block  hover:text-[#c28c2e]">Fresh litchi 100% organic</a></li>
+                                <li><a href="#" class="block  hover:text-[#c28c2e]">Fresh blueberry</a></li>
+                            </ul>
+                            <ul class="px-4 py-2 text-[15px]  space-y-4">
+                                <h1 class="text-lg text-black font-bold">Apples berries</h1>
+                                <li><a href="#" class="block  hover:text-[#c28c2e]">Pears produce</a></li>
+                                <li><a href="#" class="block  hover:text-[#c28c2e]">Fresh green orange</a></li>
+                                <li><a href="#" class="block  hover:text-[#c28c2e]">Blackberry 100% organic</a></li>
+                                <li><a href="#" class="block  hover:text-[#c28c2e]">Fresh grassben</a></li>
+                                <li><a href="#" class="block  hover:text-[#c28c2e]">Dell roll cake</a></li>
+                                <li><a href="#" class="block  hover:text-[#c28c2e]">Fresh apple</a></li>
+                            </ul>
+
+
+
+
+                        </div>
+                    </div>
+                </li>
+
+                <!-- <li><a href="#" class="hover:text-blue-600">PAGES</a></li> -->
+                <li class="relative group">
+                    <a href="#" class="  hover:text-blue-600 flex items-center gap-1">
+                        PAGES <i class="fa-solid fa-chevron-down text-xs ms-1 mt-[2px]"></i>
+                    </a>
+                    <div
+                        class="absolute hidden group-hover:block text-[gray] text-[15px] bg-white border shadow-md z-50  min-w-[150px]">
+                        <ul class="ms-2">
+                            <li><a href="/pages/about.html" class="block px-4 py-2 hover:text-[#c28c2e]">About us</a>
+                            </li>
+                            <li><a href="/pages/contact.html" class="block px-4 py-2 hover:text-[#c28c2e]">Contact
+                                    us</a></li>
+                            <li><a href="/pages/faq.html" class="block px-4 py-2 hover:text-[#c28c2e]">Faq's</a></li>
+                            <li><a href="/pages/policy.html" class="block px-4 py-2 hover:text-[#c28c2e]">Payment
+                                    policy</a></li>
+                            <li><a href="/pages/policy.html" class="block px-4 py-2 hover:text-[#c28c2e]">Privacy
+                                    policy</a></li>
+                            <li><a href="/pages/policy.html" class="block px-4 py-2 hover:text-[#c28c2e]">Return
+                                    policy</a></li>
+                            <li><a href="/pages/term&con.html" class="block px-4 py-2 hover:text-[#c28c2e]">Terms &<br>
+                                    conditions</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li><a href="#" class="hover:text-blue-600">BUY VEGIST</a></li>
+                <li><a href="blog.html" class="hover:text-green-600 block">BLOG</a></li>
+
+            </ul>
+
+
+            <!-- Right: Icons -->
+            <div class="lg:flex space-x-5 text-2xl text-gray-700">
+                <button data-drawer-target="mobile-drawer" data-drawer-show="mobile-drawer"
+                    aria-controls="mobile-drawer"
+                    class="lg:hidden text-gray-700 hover:text-blue-600 focus:outline-none">
+                    <i class="fa-solid fa-bars text-2xl"></i>
+                </button>
+                <i class="fa-solid relative fa-magnifying-glass hover:text-blue-600 cursor-pointer seach-open"
+                    data-modal-target="top-right-modal" data-modal-toggle="top-right-modal"></i>
+
+                <i class="fa-solid fa-user hover:text-blue-600 cursor-pointer" id="dropdownDefaultButton"
+                    data-dropdown-toggle="dropdown"></i>
+
+
+                <!-- Cart Icon with Badge -->
+                <i class="fa-solid fa-bag-shopping hover:text-blue-600 cursor-pointer cart relative">
+                    <span id="cart-count"
+                        class="hidden absolute -top-2 -right-2 text-sm min-w-[20px] h-[20px] flex items-center justify-center bg-orange-500 text-black rounded-full font-bold px-1">0</span>
+                </i>
+
+            </div>
+
+
+
+            <!-- Login -->
+            <div id="dropdown"
+                class=" hidden absolute z-50  bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 ">
+                <ul class="py-2 px-2 text-sm  " aria-labelledby="dropdownDefaultButton">
+                    <li>
+                        <a href="#" id="Uname" class="block px-4 py-2 hover:text-[#c28c2e]">Username</a>
+                    </li>
+                    <li>
+                        <a href="/index.html" class="block px-4 py-2  hover:text-[#c28c2e]">Sign in</a>
+                    </li>
+                    <li>
+                        <a href="#" id="logout" class="block px-4 py-2 hover:text-[#c28c2e]">Log
+                            out</a>
+                    </li>
+                </ul>
+            </div>
+
+
+
+
+
+
+            <!-- search modal -->
+            <!-- Static Modal -->
+            <div class="seach-modal hidden">
+                <div
+                    class="fixed top-0 left-0 right-1 z-50 w-full p-4 overflow-x-hidden overflow-y-auto h-[calc(100%-1rem)] max-h-full">
+                    <div class="relative w-full max-w-2xl mx-auto max-h-full">
+                        <!-- Modal content -->
+                        <div class="relative bg-white rounded-lg shadow-sm">
+                            <!-- Modal header -->
+                            <div
+                                class="flex items-center justify-between p-4 md:p-5 border-b rounded-t border-gray-200">
+                                <h3 class="text-xl mx-auto max-w-md text-black font-bold">
+                                    What are you looking for?
+                                </h3>
+                                <!-- Optional: remove button if not needed -->
+                                <button id="close-modal"
+                                    class="text-gray-400 close-modall bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 inline-flex justify-center items-center">
+
+                                    <i class="fa-solid fa-xmark text-2xl"></i>
+                                </button>
+                            </div>
+
+                            <!-- Modal body -->
+                            <div class="p-4 md:p-5 space-y-4">
+                                <form class="max-w-md mx-auto pb-5">
+                                    <div class="flex">
+                                        <div class="relative w-full">
+                                            <input type="search" id="location-search"
+                                                placeholder="Search our store item" required
+                                                class="block w-full p-3 pe-12 text-sm text-black bg-white border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 placeholder:text-gray-500" />
+                                            <button type="submit"
+                                                class="absolute inset-y-0 end-0 flex items-center px-3 text-gray-500 hover:text-blue-600">
+                                                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2"
+                                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        d="M21 21l-4.35-4.35M17 11A6 6 0 1 1 5 11a6 6 0 0 1 12 0Z">
+                                                    </path>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Drawer (Mobile) -->
+    <!-- drawer component -->
+    <div id="mobile-drawer"
+        class="fixed top-0 left-0 z-40 w-64 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-white"
+        tabindex="-1" aria-labelledby="drawer-label">
+        <div class="flex justify-between items-center mb-6">
+            <h5 class="text-lg font-bold text-gray-800">Menu</h5>
+            <button type="button" data-drawer-hide="mobile-drawer" aria-controls="mobile-drawer"
+                class="text-gray-600 hover:text-red-500 text-xl">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+
+        <!-- Navigation Items -->
+        <ul class="space-y-4 text-gray-700 font-medium">
+            <!-- HOME Dropdown -->
+            <li>
+                <button onclick="toggleDropdown('homeDropdown')" class="flex w-full justify-between items-center">
+                    HOME <i class="fa-solid fa-chevron-down text-xs"></i>
+                </button>
+                <ul id="homeDropdown" class="hidden pl-4 mt-2 space-y-2 text-sm text-gray-600">
+                    <li><a href="/index.html" class="block hover:text-green-600">Home</a></li>
+                    <li><a href="/products/fruit.html" class="block hover:text-green-600">Fruit</a></li>
+                    <li><a href="/products/vegetables.html" class="block hover:text-green-600">Vegetable</a></li>
+                </ul>
+            </li>
+
+            <!-- COLLECTION Link -->
+            <li><a href="#" class="hover:text-green-600 block">COLLECTION</a></li>
+
+            <!-- SHOP Dropdown -->
+            <li>
+                <button onclick="toggleDropdown('shopDropdown')" class="flex w-full justify-between items-center">
+                    SHOP <i class="fa-solid fa-chevron-down text-xs"></i>
+                </button>
+                <ul id="shopDropdown" class="hidden pl-4 mt-2 space-y-2 text-sm text-gray-600">
+
+                    <!-- Fresh Food -->
+                    <li>
+                        <button onclick="toggleDropdown('freshDropdown')"
+                            class="flex w-full justify-between items-center">
+                            Fresh Food <i class="fa-solid fa-chevron-down text-xs"></i>
+                        </button>
+                        <ul id="freshDropdown" class="hidden pl-4 mt-2 space-y-2">
+                            <li><a href="#" class="block  hover:text-green-600">Fruit & nut</a></li>
+                            <li><a href="#" class="block  hover:text-green-600">Snack foods</a></li>
+                            <li><a href="#" class="block  hover:text-green-600">Organics nut gifts</a></li>
+                            <li><a href="#" class="block  hover:text-green-600">Non-dairy</a></li>
+                            <li><a href="#" class="block  hover:text-green-600">Blackberry Organic</a></li>
+                            <li><a href="#" class="block  hover:text-green-600">Fresh & healthy food</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Mixedfruits -->
+                    <li>
+                        <button onclick="toggleDropdown('mixedDropdown')"
+                            class="flex w-full justify-between items-center">
+                            Mixedfruits <i class="fa-solid fa-chevron-down text-xs"></i>
+                        </button>
+                        <ul id="mixedDropdown" class="hidden pl-4 mt-2 space-y-2">
+                            <li><a href="#" class="block hover:text-green-600">Oranges</a></li>
+                            <li><a href="#" class="block hover:text-green-600">Ghee beverages</a></li>
+                            <li><a href="#" class="block  hover:text-green-600">Ranch salad</a></li>
+                            <li><a href="#" class="block  hover:text-green-600">Fresh avocado</a></li>
+                            <li><a href="#" class="block  hover:text-green-600">Fresh blueberry</a></li>
+                            <li><a href="#" class="block  hover:text-green-600">Fresh apple (5kg)</a></li>
+
+                        </ul>
+                    </li>
+
+                    <!-- Bananas & plantains -->
+                    <li>
+                        <button onclick="toggleDropdown('bananaDropdown')"
+                            class="flex w-full justify-between items-center">
+                            Bananas & plantains <i class="fa-solid fa-chevron-down text-xs"></i>
+                        </button>
+                        <ul id="bananaDropdown" class="hidden pl-4 mt-2 space-y-2">
+                            <li><a href="#" class="block  hover:text-green-600">Fresh gala</a></li>
+                            <li><a href="#" class="block  hover:text-green-600">Fifts mixed fruits</a></li>
+                            <li><a href="#" class="block  hover:text-green-600">Fresh organic</a></li>
+                            <li><a href="#" class="block  hover:text-green-600">Vegetable tomato</a></li>
+                            <li><a href="#" class="block  hover:text-green-600">Fresh litchi 100% organic</a></li>
+                            <li><a href="#" class="block  hover:text-green-600">Fresh blueberry</a></li>
+
+                        </ul>
+                    </li>
+
+                    <!-- Apples berries -->
+                    <li>
+                        <button onclick="toggleDropdown('appleDropdown')"
+                            class="flex w-full justify-between items-center">
+                            Apples berries <i class="fa-solid fa-chevron-down text-xs"></i>
+                        </button>
+                        <ul id="appleDropdown" class="hidden pl-4 mt-2 space-y-2">
+                            <li><a href="#" class="block  hover:text-green-600">Pears produce</a></li>
+                            <li><a href="#" class="block  hover:text-green-600">Fresh green orange</a></li>
+                            <li><a href="#" class="block  hover:text-green-600">Blackberry 100% organic</a></li>
+                            <li><a href="#" class="block  hover:text-green-600">Fresh grassben</a></li>
+                            <li><a href="#" class="block  hover:text-green-600">Dell roll cake</a></li>
+                            <li><a href="#" class="block  hover:text-green-600">Fresh apple</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </li>
+
+            </li>
+
+            <!-- PAGES Dropdown -->
+            <li>
+                <button onclick="toggleDropdown('pagesDropdown')" class="flex w-full justify-between items-center">
+                    PAGES <i class="fa-solid fa-chevron-down text-xs"></i>
+                </button>
+                <ul id="pagesDropdown" class="hidden pl-4 mt-2 space-y-2 text-sm text-gray-600">
+                    <li><a href="/pages/about.html" class="block hover:text-green-600">About Us</a></li>
+                    <li><a href="/pages/contact.html" class="block hover:text-green-600">Contact Us</a></li>
+                    <li><a href="/pages/faq.html" class="block hover:text-green-600">FAQs</a></li>
+                    <li><a href="/pages/policy.html" class="block hover:text-green-600">Privacy Policy</a></li>
+                    <li><a href="/pages/policy.html" class="block hover:text-green-600">Payment policy</a></li>
+                    <li><a href="/pages/policy.html" class="block hover:text-green-600">Return policy</a></li>
+                    <li><a href="/pages/term&con.html" class="block hover:text-green-600">Terms &<br> conditions</a>
+                    </li>
+
+                </ul>
+            </li>
+
+            <!-- Static Link -->
+            <li><a href="#" class="hover:text-green-600 block">BUY VEGIST</a></li>
+            <li><a href="blog.html" class="hover:text-green-600 block">BLOG</a></li>
+
+        </ul>
+
+    </div>
+    <!-- navbar end -->
+
+    <!-- product slider -->
+
+    <div id="default-carousel" class="relative w-full" data-carousel="slide">
+        <!-- Carousel wrapper -->
+        <div class="relative h-[450px] md:h-[600px] overflow-hidden " data-aos="zoom-in">
+            <!-- Slide 1 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <div class="relative w-full h-full flex items-center justify-start">
+                    <!-- Text Section -->
+                    <div class="absolute z-20 left-10 md:left-24 max-w-lg text-black">
+                        <h1 class="text-[#fff] text-xl py-4 ps-3">Fresh & Health</h1>
+                        <h2 class="text-3xl md:text-5xl font-bold text-[#232323]">Organic dryfruits & <br>Healthy Taste
+                        </h2>
+                        <p class="mt-2 text-lg hidden md:block">Fresh products directly from nature to your plate.</p>
+                        <button type="button"
+                            class="focus:outline-none my-5 ms-1 text-white bg-green-700 hover:bg-red-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Orderd
+                            Now</button>
+
+                    </div>
+                    <!-- Image -->
+                    <img src="https://vegina-store.myshopify.com/cdn/shop/files/slider1_e1895e52-60f4-4653-a343-166b5c71064b.jpg?v=1715936627"
+                        class="w-full h-full object-cover" alt="...">
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <div class="relative w-full h-full flex items-center justify-start">
+                    <div class="absolute z-20 left-10 md:left-24 max-w-lg text-black">
+                        <h1 class="text-[#fff] text-xl py-4 ps-3 ">Fresh dryfruits</h1>
+                        <h2 class="text-3xl md:text-5xl font-bold text-[#232323]">FarmeBox Healthiest <br>dryfruits
+                        </h2>
+                        <p class="mt-2 text-lg hidden md:block">Fresh products directly from nature to your plate.</p>
+                        <button type="button"
+                            class="focus:outline-none my-5 ms-1 text-white bg-green-700 hover:bg-red-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Orderd
+                            Now</button>
+
+
+                    </div>
+                    <img src="https://vegina-store.myshopify.com/cdn/shop/files/slider-17-2.jpg?v=1717411510"
+                        class="w-full h-full object-cover" alt="...">
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <div class="relative w-full h-full flex items-center justify-start">
+                    <div class="absolute z-20 left-10 md:left-24 max-w-lg text-black">
+                        <h1 class="text-[#fff] text-xl py-4 ps-3">Fresh & Health</h1>
+                        <h2 class="text-3xl md:text-5xl font-bold">Fresh Collection <br>Up to 50% Off</h2>
+                        <p class="mt-2 text-lg hidden md:block">Fresh products directly from nature to your plate.</p>
+                        <button type="button"
+                            class="focus:outline-none my-5 ms-1 text-white bg-green-700 hover:bg-red-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Orderd
+                            Now</button>
+
+
+                    </div>
+                    <img src="https://vegina-store.myshopify.com/cdn/shop/files/slider-17-3.jpg?v=1717411510"
+                        class="w-full h-full object-cover" alt="...">
+                </div>
+            </div>
+        </div>
+
+        <!-- Indicators -->
+        <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3">
+            <button type="button" class="w-3 h-3 rounded-full bg-white" aria-label="Slide 1"
+                data-carousel-slide-to="0"></button>
+            <button type="button" class="w-3 h-3 rounded-full bg-white" aria-label="Slide 2"
+                data-carousel-slide-to="1"></button>
+            <button type="button" class="w-3 h-3 rounded-full bg-white" aria-label="Slide 3"
+                data-carousel-slide-to="2"></button>
+        </div>
+
+        <!-- Controls -->
+        <button type="button"
+            class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group"
+            data-carousel-prev>
+            <span
+                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/60">
+                <svg class="w-4 h-4 text-black" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M5 1 1 5l4 4" />
+                </svg>
+            </span>
+        </button>
+        <button type="button"
+            class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group"
+            data-carousel-next>
+            <span
+                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/60">
+                <svg class="w-4 h-4 text-black" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="m1 9 4-4-4-4" />
+                </svg>
+            </span>
+        </button>
+    </div>
+    <!-- product end -->
+
+    <!-- slider marq -->
+    <section class="mt-10 px-2 border-b-2">
+        <marquee behavior="scroll" direction="left" scrollamount="10">
+            <div class="flex items-center text-lg font-[500] justify-around pb-5">
+                <h4>/&nbsp; Summer special discount <span class="text-red-600">50% off </span>&nbsp; /</h4>
+                <h4>/&nbsp; Sale upto to <span class="text-red-600">30% off </span> on new arrivals &nbsp;/</h4>
+                <h4>/&nbsp; Best grocery store collection of <span class="text-red-600">2025 </span>&nbsp;/</h4>
+                <h4>/&nbsp; Instant discount code 20% off <span class="text-red-600">VEG3YS </span>&nbsp;/</h4>
+            </div>
+        </marquee>
+    </section>
+    <!--slider meq end  -->
+
+    <!-- product img -->
+    <section class="mt-20 px-6">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+
+            <!-- Item 1 -->
+            <div class="overflow-hidden rounded-xl relative h-auto w-auto group" data-aos="fade-up-right">
+                <img src="https://vegina-store.myshopify.com/cdn/shop/files/banner1_bbf2e6d0-8e6c-471e-ac6b-cb5fb159405c.jpg?v=1715945464"
+                    class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500"
+                    alt="Banner 1" />
+                <div class="absolute w-full px-5  top-[10%] text-[#333333]  md:space-y-2 lg:space-y-4">
+                    <h1 class="text-[10px] lg:text-[15px] text-white font-semibold underline">FRESH FOOD</h1>
+                    <p class="text-md lg:text-3xl font-semibold">Organic and fresh<br />30% off</p>
+                    <button type="button"
+                        class="text-white bg-green-600 hover:bg-red-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-7 py-2.5">
+                        Shop now
+                    </button>
+                </div>
+            </div>
+
+
+            <!-- Item 2 -->
+            <div class="overflow-hidden relative rounded-xl h-auto w-auto group" data-aos="fade-up-left">
+                <img src="https://vegina-store.myshopify.com/cdn/shop/files/banner2_b6811ba8-f142-44ad-947b-8e03f55f2e94.jpg?v=1715945463"
+                    class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500"
+                    alt="Banner 1" />
+                <div class="absolute w-full px-5  top-[10%] text-[#333333] md:space-y-2 lg:space-y-4">
+                    <h1 class="text-[10px] lg:text-[15px] text-white font-semibold underline">FRESH FOOD</h1>
+                    <p class="text-md lg:text-3xl font-semibold">A favorite grocery<br />30% off</p>
+                    <button type="button"
+                        class="text-white bg-green-600 hover:bg-red-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-7 py-2.5">
+                        Shop now
+                    </button>
+                </div>
+            </div>
+    </section>
+
+
+
+    <!-- Trending Products Section -->
+    <section class="bg-[#f9f9f9] mt-20 px-4 sm:px-8 md:px-16 lg:px-24 py-16" data-aos="fade-up">
+        <!-- Heading -->
+        <div class="text-center mb-10">
+            <h2 class="text-4xl font-bold text-gray-800">Trending Products</h2>
+            <p class="text-gray-500 mt-2">Explore our top picks just for you</p>
+        </div>
+
+        <!-- Products Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8">
+
+            <!-- Product Card 1-->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition duration-300 product">
+                <a href="#">
+
+                    <img src="https://www.localefoods.com.au/assets/full/NUT001A.jpg?20190815084602"
+                        data-original="https://www.localefoods.com.au/assets/full/NUT001A.jpg?20190815084602"
+                        data-hover="https://vegina-store.myshopify.com/cdn/shop/files/product-17-44.jpg?v=1717580920&width=352"
+                        alt="Almonds" class="hover-img w-full h-56 object-contain  transition duration-300" />
+                </a>
+
+                <div class="px-5 pb-6 pt-4">
+                    <a href="#">
+                        <h3 class="text-lg font-semibold text-gray-800 hover:text-green-600 transition">
+                            Almonds whole (250g)
+                        </h3>
+                    </a>
+                    <div class="flex items-center mt-3 mb-2">
+                        <div class="text-amber-400 space-x-1 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <span class="ml-3 text-xs bg-blue-100 text-blue-800 font-medium px-2 py-0.5 rounded-sm">
+                            5.0
+                        </span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-2">
+                            <p class="text-gray-500 line-through">$899</p>
+                            <h4 class="text-green-600 font-bold text-lg">$799</h4>
+                        </div>
+
+                        <button
+                            class="add-cart bg-orange-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg transition">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Card 2-->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition duration-300 product">
+                <a href="#">
+                    <img src="https://n1.sdlcdn.com/imgs/i/f/y/KASHMIRI-Kesar-Saffron-Best-Quality-SDL075355522-2-3e8ea"
+                        data-original="https://n1.sdlcdn.com/imgs/i/f/y/KASHMIRI-Kesar-Saffron-Best-Quality-SDL075355522-2-3e8ea"
+                        data-hover="https://vegina-store.myshopify.com/cdn/shop/files/product-17-37.jpg?v=1717580540&width=352"
+                        alt="Almonds" class="hover-img w-full h-56 object-contain transition duration-300" />
+
+                </a>
+                <div class="px-5 pb-6 pt-4">
+                    <a href="#">
+                        <h3 class="text-lg font-semibold text-gray-800 hover:text-green-600 transition">
+                            Mogra kesar (250g)
+                        </h3>
+                    </a>
+                    <div class="flex items-center mt-3 mb-2">
+                        <div class=" space-x-1 text-sm">
+                            <i class="fa-solid fa-star text-amber-400"></i>
+                            <i class="fa-solid fa-star text-amber-400"></i>
+                            <i class="fa-solid fa-star text-amber-400"></i>
+                            <i class="fa-solid fa-star text-gray-300"></i>
+                            <i class="fa-solid fa-star text-gray-300"></i>
+                        </div>
+                        <span class="ml-3 text-xs bg-blue-100 text-blue-800 font-medium px-2 py-0.5 rounded-sm">
+                            3.0
+                        </span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-2">
+                            <p class="text-gray-500 line-through">$499</p>
+                            <h4 class="text-green-600 font-bold text-lg">$399</h4>
+                        </div>
+
+                        <button
+                            class="add-cart bg-orange-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg transition">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Card 3-->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition duration-300 product">
+                <a href="#">
+
+                    <img src="https://tse3.mm.bing.net/th/id/OIP.rBJDDkEHpZmXvDRkICZhKQHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                        data-original="https://tse3.mm.bing.net/th/id/OIP.rBJDDkEHpZmXvDRkICZhKQHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                        data-hover="https://vegina-store.myshopify.com/cdn/shop/files/product-17-22.jpg?v=1717505433&width=352"
+                        alt="Almonds" class="hover-img w-full h-56 object-contain transition duration-300" />
+                </a>
+
+                <div class="px-5 pb-6 pt-4">
+                    <a href="#">
+                        <h3 class="text-lg font-semibold text-gray-800 hover:text-green-600 transition">
+                            Dry figs (1kg)
+                        </h3>
+                    </a>
+                    <div class="flex items-center mt-3 mb-2">
+                        <div class="space-x-1 text-sm">
+                            <i class="fa-solid fa-star text-amber-400"></i>
+                            <i class="fa-solid fa-star text-amber-400"></i>
+                            <i class="fa-solid fa-star text-amber-400"></i>
+                            <i class="fa-solid fa-star text-amber-400"></i>
+                            <i class="fa-solid fa-star text-gray-300"></i>
+                        </div>
+                        <span class="ml-3 text-xs bg-blue-100 text-blue-800 font-medium px-2 py-0.5 rounded-sm">
+                            4.0
+                        </span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-2">
+                            <p class="text-gray-500 line-through">$599</p>
+                            <h4 class="text-green-600 font-bold text-lg">$499</h4>
+                        </div>
+
+                        <button
+                            class="add-cart bg-orange-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg transition">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Card 4-->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition duration-300 product">
+                <a href="#">
+
+                    <img src="https://utthamasweets.com/wp-content/uploads/2022/01/kismis.png"
+                        data-original="https://utthamasweets.com/wp-content/uploads/2022/01/kismis.png"
+                        data-hover="https://vegina-store.myshopify.com/cdn/shop/files/product-17-20_384bda46-d7a8-41e8-81e3-a2f978eb107b.jpg?v=1717505368&width=352"
+                        alt="Almonds" class="hover-img w-full h-56 object-contain transition duration-300" />
+                </a>
+
+                <div class="px-5 pb-6 pt-4">
+                    <a href="#">
+                        <h3 class="text-lg font-semibold text-gray-800 hover:text-green-600 transition">
+                            Yellow kismis (500g)
+                        </h3>
+                    </a>
+                    <div class="flex items-center mt-3 mb-2">
+                        <div class="space-x-1 text-sm">
+                            <i class="fa-solid fa-star text-amber-400"></i>
+                            <i class="fa-solid fa-star text-amber-400"></i>
+                            <i class="fa-solid fa-star text-amber-400"></i>
+                            <i class="fa-solid fa-star text-gray-300"></i>
+                            <i class="fa-solid fa-star text-gray-300"></i>
+                        </div>
+                        <span class="ml-3 text-xs bg-blue-100 text-blue-800 font-medium px-2 py-0.5 rounded-sm">
+                            3.0
+                        </span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-2">
+                            <p class="text-gray-500 line-through">$699</p>
+                            <h4 class="text-green-600 font-bold text-lg">$500</h4>
+                        </div>
+
+                        <button
+                            class="add-cart bg-orange-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg transition">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Card 5-->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition duration-300 product">
+                <a href="#">
+
+                    <img src="https://growstar.in/wp-content/uploads/2020/10/walnut-without-shell-light-amber-halves-walnut-kernel-small-a-1-overseas-2-500x500-min.jpg"
+                        data-original="https://growstar.in/wp-content/uploads/2020/10/walnut-without-shell-light-amber-halves-walnut-kernel-small-a-1-overseas-2-500x500-min.jpg"
+                        data-hover="https://vegina-store.myshopify.com/cdn/shop/files/product-17-8.jpg?v=1717502624&width=352"
+                        alt="Almonds" class="hover-img w-full h-56 object-contain transition duration-300" />
+                </a>
+
+                <div class="px-5 pb-6 pt-4">
+                    <a href="#">
+                        <h3 class="text-lg font-semibold text-gray-800 hover:text-green-600 transition">
+                            Fresh walnut (200g)
+                        </h3>
+                    </a>
+                    <div class="flex items-center mt-3 mb-2">
+                        <div class="space-x-1 text-sm">
+                            <i class="fa-solid fa-star text-amber-400"></i>
+                            <i class="fa-solid fa-star text-amber-400"></i>
+                            <i class="fa-solid fa-star text-gray-300"></i>
+                            <i class="fa-solid fa-star text-gray-300"></i>
+                            <i class="fa-solid fa-star text-gray-300"></i>
+                        </div>
+                        <span class="ml-3 text-xs bg-blue-100 text-blue-800 font-medium px-2 py-0.5 rounded-sm">
+                            2.0
+                        </span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-2">
+                            <p class="text-gray-500 line-through">$699</p>
+                            <h4 class="text-green-600 font-bold text-lg">$559</h4>
+                        </div>
+
+                        <button
+                            class="add-cart bg-orange-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg transition">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Card 6-->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition duration-300 product">
+                <a href="#">
+
+                    <img src="https://www.davidrobertsfood.com/wp-content/uploads/2021/09/BP171-RST-WHOLE-CASHEWS-W-SALT.png"
+                        data-original="https://www.davidrobertsfood.com/wp-content/uploads/2021/09/BP171-RST-WHOLE-CASHEWS-W-SALT.png"
+                        data-hover="https://cdn.mafrservices.com/sys-master-root/hfd/h60/15337463054366/547654_main.jpg?im=Resize=480"
+                        alt="Almonds" class="hover-img w-full h-56 object-contain transition duration-300" />
+                </a>
+
+                <div class="px-5 pb-6 pt-4">
+                    <a href="#">
+                        <h3 class="text-lg font-semibold text-gray-800 hover:text-green-600 transition">
+                            Roast cashews (500g)
+                        </h3>
+                    </a>
+                    <div class="flex items-center mt-3 mb-2">
+                        <div class="text-amber-400 space-x-1 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <span class="ml-3 text-xs bg-blue-100 text-blue-800 font-medium px-2 py-0.5 rounded-sm">
+                            5.0
+                        </span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-2">
+                            <p class="text-gray-500 line-through">$999</p>
+                            <h4 class="text-green-600 font-bold text-lg">$899</h4>
+                        </div>
+
+                        <button
+                            class="add-cart bg-orange-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg transition">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Card 7-->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition duration-300 product">
+                <a href="#">
+
+                    <img src="https://5.imimg.com/data5/SELLER/Default/2023/10/349748112/XC/UB/KP/2132696/green-moong-dal-beans-500x500.jpg"
+                        data-original="https://5.imimg.com/data5/SELLER/Default/2023/10/349748112/XC/UB/KP/2132696/green-moong-dal-beans-500x500.jpg"
+                        data-hover="https://vegina-store.myshopify.com/cdn/shop/files/product-17-59.jpg?v=1717591468&width=352"
+                        alt="Almonds" class="hover-img w-full h-56 object-contain transition duration-300" />
+                </a>
+
+                <div class="px-5 pb-6 pt-4">
+                    <a href="#">
+                        <h3 class="text-lg font-semibold text-gray-800 hover:text-green-600 transition">
+                            Moong dal green (700g)
+                        </h3>
+                    </a>
+                    <div class="flex items-center mt-3 mb-2">
+                        <div class="space-x-1 text-sm">
+                            <i class="fa-solid fa-star text-amber-400"></i>
+                            <i class="fa-solid fa-star text-amber-400"></i>
+                            <i class="fa-solid fa-star text-amber-400"></i>
+                            <i class="fa-solid fa-star text-gray-300"></i>
+                            <i class="fa-solid fa-star text-gray-300"></i>
+                        </div>
+                        <span class="ml-3 text-xs bg-blue-100 text-blue-800 font-medium px-2 py-0.5 rounded-sm">
+                            3.0
+                        </span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-2">
+                            <p class="text-gray-500 line-through">$399</p>
+                            <h4 class="text-green-600 font-bold text-lg">$299</h4>
+                        </div>
+
+                        <button
+                            class="add-cart bg-orange-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg transition">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Card 8-->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition duration-300 product">
+                <a href="#">
+
+                    <img src="https://www.dryfruitkingdom.com/images/thumbs/0006409_salted-pistachio-round-khara-pista_510.jpeg"
+                        data-original="https://www.dryfruitkingdom.com/images/thumbs/0006409_salted-pistachio-round-khara-pista_510.jpeg"
+                        data-hover="https://img.freepik.com/premium-photo/pistachio-nuts-wooden-bowl-isolated-white-background-top-view_264757-149.jpg?w=360"
+                        alt="Almonds" class="hover-img w-full h-56 object-contain transition duration-300" />
+                </a>
+
+                <div class="px-5 pb-6 pt-4">
+                    <a href="#">
+                        <h3 class="text-lg font-semibold text-gray-800 hover:text-green-600 transition">
+                            Salted pista (800g)
+                        </h3>
+                    </a>
+                    <div class="flex items-center mt-3 mb-2">
+                        <div class="space-x-1 text-sm">
+                            <i class="fa-solid fa-star text-amber-400"></i>
+                            <i class="fa-solid fa-star text-amber-400"></i>
+                            <i class="fa-solid fa-star text-amber-400"></i>
+                            <i class="fa-solid fa-star text-amber-400"></i>
+                            <i class="fa-solid fa-star text-gray-300"></i>
+                        </div>
+                        <span class="ml-3 text-xs bg-blue-100 text-blue-800 font-medium px-2 py-0.5 rounded-sm">
+                            4.0
+                        </span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center gap-2">
+                            <p class="text-gray-500 line-through">$799</p>
+                            <h4 class="text-green-600 font-bold text-lg">$599</h4>
+                        </div>
+
+                        <button
+                            class="add-cart bg-orange-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg transition">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- timer -->
+
+    <!-- timer -->
+    <section class="" data-aos="fade-up">
+        <div
+            class="bg-[url('https://www.itoozhiayurveda.in/wp-content/uploads/2023/10/set-pecan-pistachios-almond-peanut-cashew-pine-nuts-lined-up-assorted-nuts-dried-fruits-mini-different-bowls-scaled.jpg')] bg-cover bg-center bg-fixed h-[60vh] flex items-center justify-center">
+
+            <div
+                class="bg-white bg-opacity-80  p-8 rounded-lg  max-w-4xl w-full flex flex-col md:flex-row items-center justify-between gap-6">
+
+                <!-- Left: Timer -->
+                <div class="flex gap-4 text-white text-lg font-semibold">
+                    <div class="bg-[#F5AB1E] px-4 py-2 rounded">
+                        <span id="days">0</span> Day
+                    </div>
+                    <div class="bg-[#F5AB1E] px-4 py-2 rounded">
+                        <span id="hours">0</span> Hrs
+                    </div>
+                    <div class="bg-[#F5AB1E] px-4 py-2 rounded">
+                        <span id="minutes">0</span> Min
+                    </div>
+                    <div class="bg-[#F5AB1E] px-4 py-2 rounded">
+                        <span id="seconds">0</span> Sec
+                    </div>
+                </div>
+
+                <!-- Right: Text -->
+                <div class="text-center md:text-right">
+                    <h1 class="text-2xl font-bold text-gray-800 mb-2">Deal of the Day!</h1>
+                    <p class="text-gray-600 mb-4">We offer a hot deal every festival</p>
+                    <button
+                        class="bg-yellow-500 border-2 border-yellow-500 hover:bg-transparent hover:text-black text-white px-6 py-2 rounded-full transition">
+                        Shop Collection
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Services -->
+    <section class="mt-20 px-6" data-aos="flip-up">
+        <div class="flex flex-wrap justify-around gap-8 border-b-2 pb-7">
+
+            <!-- Card 1 -->
+            <div class="flex items-center gap-4">
+                <img src="https://vegina-store.myshopify.com/cdn/shop/files/ser1.png?v=1716176948&width=352"
+                    alt="Free Delivery"
+                    class="transition-transform duration-500 hover:scale-110 hover:-translate-x-2 origin-right" />
+                <div>
+                    <h1 class="font-semibold text-lg text-gray-800">Free Delivery</h1>
+                    <p class="text-gray-500 text-sm">Order from all items</p>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="flex items-center gap-4">
+                <img src="https://vegina-store.myshopify.com/cdn/shop/files/ser2.png?v=1716176948&width=352"
+                    alt="Secure Payment"
+                    class="transition-transform duration-500 hover:scale-110 hover:-translate-x-2 origin-right" />
+                <div>
+                    <h1 class="font-semibold text-lg text-gray-800">Secure Payment</h1>
+                    <p class="text-gray-500 text-sm">100% protected</p>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="flex items-center gap-4">
+                <img src="https://vegina-store.myshopify.com/cdn/shop/files/ser3.png?v=1716176948&width=352"
+                    alt="24/7 Support"
+                    class=" transition-transform duration-500 hover:scale-110 hover:-translate-x-2 origin-right" />
+                <div>
+                    <h1 class="font-semibold text-lg text-gray-800">24/7 Support</h1>
+                    <p class="text-gray-500 text-sm">Always here for you</p>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="flex items-center gap-4">
+                <img src="https://vegina-store.myshopify.com/cdn/shop/files/ser4_e42d90a9-eb00-4d02-8d1e-a78fc171a96f.png?v=1716176948&width=352"
+                    alt="Easy Returns"
+                    class="transition-transform duration-500 hover:scale-110 hover:-translate-x-2 origin-right" />
+                <div>
+                    <h1 class="font-semibold text-lg text-gray-800">Easy Returns</h1>
+                    <p class="text-gray-500 text-sm">Hassle-free process</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- subscribe -->
+    <section class="px-4 mt-16 bg-gradient-to-r from-green-100 via-lime-100 to-emerald-100" data-aos="flip-left">
+        <div class="rounded-xl shadow-lg lg:p-16 md:p-12 p-8  transition-all duration-500" >
+            <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+
+                <!-- Left -->
+                <div class="md:w-1/2">
+                    <h2 class="lg:text-4xl md:text-3xl text-2xl font-bold text-green-800 mb-5">
+                        Subscribe Now to Get <br /> Special Features!
+                    </h2>
+                    <p class="text-green-700">Join now and stay updated with our best offers & news!</p>
+                </div>
+
+                <!-- Right -->
+                <div class="md:w-1/2 w-full">
+                    <h1 class="text-2xl font-[800] text-center mb-5 text-green-500">Subscribe and 20% off</h1>
+                    <form class="flex flex-col lg:flex-row gap-4">
+
+                        <input type="email" placeholder="email123@gmail.com" required
+                            class="flex-1 p-3 text-sm text-gray-800 bg-white border border-gray-300 rounded-lg focus:ring-green-500 focus:border-green-500 placeholder:text-gray-500 shadow-sm" />
+
+                        <button
+                            class="bg-green-600 text-white hover:bg-red-600 px-6 py-3 rounded-lg font-semibold transition duration-300 shadow">
+                            Subscribe Now
+                        </button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- deal of the day -->
+    <section class="mt-20 px-4 bg-[#FBF8F3] py-10" data-aos="zoom-out-up">
+        <!-- Heading -->
+        <div class="text-center mb-10">
+            <h2 class="text-4xl font-bold text-gray-800">Deal of <span
+                    class="font-medium border-b-2 pb-1 border-black">the day</span></h2>
+            <!-- <p class="text-gray-500 mt-2">Explore our top picks just for you</p> -->
+        </div>
+
+
+        <div class="mx-auto">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 mx-auto gap-8">
+
+
+                <!-- Product Card 1-->
+                <div
+                    class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition duration-300 product">
+                    <a href="#">
+
+                        <img src="https://www.localefoods.com.au/assets/full/NUT001A.jpg?20190815084602"
+                            data-original="https://www.localefoods.com.au/assets/full/NUT001A.jpg?20190815084602"
+                            data-hover="https://vegina-store.myshopify.com/cdn/shop/files/product-17-44.jpg?v=1717580920&width=352"
+                            alt="Almonds" class="hover-img w-full h-56 object-contain  transition duration-300" />
+                    </a>
+
+                    <div class="px-5 pb-6 pt-4">
+                        <a href="#">
+                            <h3 class="text-lg font-semibold text-gray-800 hover:text-green-600 transition">
+                                Almonds whole (250g)
+                            </h3>
+                        </a>
+                        <div class="flex items-center mt-3 mb-2">
+                            <div class="text-amber-400 space-x-1 text-sm">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <span class="ml-3 text-xs bg-blue-100 text-blue-800 font-medium px-2 py-0.5 rounded-sm">
+                                5.0
+                            </span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-2">
+                                <p class="text-gray-500 line-through">$899</p>
+                                <h4 class="text-green-600 font-bold text-lg">$799</h4>
+                            </div>
+
+                            <button
+                                class="add-cart bg-orange-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg transition">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Product Card 2-->
+                <div
+                    class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition duration-300 product">
+                    <a href="#">
+
+                        <img src="https://utthamasweets.com/wp-content/uploads/2022/01/kismis.png"
+                            data-original="https://utthamasweets.com/wp-content/uploads/2022/01/kismis.png"
+                            data-hover="https://vegina-store.myshopify.com/cdn/shop/files/product-17-20_384bda46-d7a8-41e8-81e3-a2f978eb107b.jpg?v=1717505368&width=352"
+                            alt="Almonds" class="hover-img w-full h-56 object-contain transition duration-300" />
+                    </a>
+
+                    <div class="px-5 pb-6 pt-4">
+                        <a href="#">
+                            <h3 class="text-lg font-semibold text-gray-800 hover:text-green-600 transition">
+                                Yellow kismis (500g)
+                            </h3>
+                        </a>
+                        <div class="flex items-center mt-3 mb-2">
+                            <div class="space-x-1 text-sm">
+                                <i class="fa-solid fa-star text-amber-400"></i>
+                                <i class="fa-solid fa-star text-amber-400"></i>
+                                <i class="fa-solid fa-star text-amber-400"></i>
+                                <i class="fa-solid fa-star text-gray-300"></i>
+                                <i class="fa-solid fa-star text-gray-300"></i>
+                            </div>
+                            <span class="ml-3 text-xs bg-blue-100 text-blue-800 font-medium px-2 py-0.5 rounded-sm">
+                                3.0
+                            </span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-2">
+                                <p class="text-gray-500 line-through">$699</p>
+                                <h4 class="text-green-600 font-bold text-lg">$500</h4>
+                            </div>
+
+                            <button
+                                class="add-cart bg-orange-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg transition">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 3-->
+                <div
+                    class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition duration-300 product">
+                    <a href="#">
+
+                        <img src="https://5.imimg.com/data5/SELLER/Default/2023/10/349748112/XC/UB/KP/2132696/green-moong-dal-beans-500x500.jpg"
+                            data-original="https://5.imimg.com/data5/SELLER/Default/2023/10/349748112/XC/UB/KP/2132696/green-moong-dal-beans-500x500.jpg"
+                            data-hover="https://vegina-store.myshopify.com/cdn/shop/files/product-17-59.jpg?v=1717591468&width=352"
+                            alt="Almonds" class="hover-img w-full h-56 object-contain transition duration-300" />
+                    </a>
+
+                    <div class="px-5 pb-6 pt-4">
+                        <a href="#">
+                            <h3 class="text-lg font-semibold text-gray-800 hover:text-green-600 transition">
+                                Moong dal green (700g)
+                            </h3>
+                        </a>
+                        <div class="flex items-center mt-3 mb-2">
+                            <div class="space-x-1 text-sm">
+                                <i class="fa-solid fa-star text-amber-400"></i>
+                                <i class="fa-solid fa-star text-amber-400"></i>
+                                <i class="fa-solid fa-star text-amber-400"></i>
+                                <i class="fa-solid fa-star text-gray-300"></i>
+                                <i class="fa-solid fa-star text-gray-300"></i>
+                            </div>
+                            <span class="ml-3 text-xs bg-blue-100 text-blue-800 font-medium px-2 py-0.5 rounded-sm">
+                                3.0
+                            </span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-2">
+                                <p class="text-gray-500 line-through">$399</p>
+                                <h4 class="text-green-600 font-bold text-lg">$299</h4>
+                            </div>
+
+                            <button
+                                class="add-cart bg-orange-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg transition">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 4-->
+                <div
+                    class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition duration-300 product">
+                    <a href="#">
+
+                        <img src="https://www.dryfruitkingdom.com/images/thumbs/0006409_salted-pistachio-round-khara-pista_510.jpeg"
+                            data-original="https://www.dryfruitkingdom.com/images/thumbs/0006409_salted-pistachio-round-khara-pista_510.jpeg"
+                            data-hover="https://img.freepik.com/premium-photo/pistachio-nuts-wooden-bowl-isolated-white-background-top-view_264757-149.jpg?w=360"
+                            alt="Almonds" class="hover-img w-full h-56 object-contain transition duration-300" />
+                    </a>
+
+                    <div class="px-5 pb-6 pt-4">
+                        <a href="#">
+                            <h3 class="text-lg font-semibold text-gray-800 hover:text-green-600 transition">
+                                Salted pista (800g)
+                            </h3>
+                        </a>
+                        <div class="flex items-center mt-3 mb-2">
+                            <div class="space-x-1 text-sm">
+                                <i class="fa-solid fa-star text-amber-400"></i>
+                                <i class="fa-solid fa-star text-amber-400"></i>
+                                <i class="fa-solid fa-star text-amber-400"></i>
+                                <i class="fa-solid fa-star text-amber-400"></i>
+                                <i class="fa-solid fa-star text-gray-300"></i>
+                            </div>
+                            <span class="ml-3 text-xs bg-blue-100 text-blue-800 font-medium px-2 py-0.5 rounded-sm">
+                                4.0
+                            </span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-2">
+                                <p class="text-gray-500 line-through">$799</p>
+                                <h4 class="text-green-600 font-bold text-lg">$599</h4>
+                            </div>
+
+                            <button
+                                class="add-cart bg-orange-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg transition">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="/js/add.js"></script>
+
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1800,
+            once: true
+        });
+    </script>
+
+    <!-- 
+    <script>
+        const searchOpenIcons = document.querySelector(".seach-open"); // sab search icons
+        const searchModal = document.querySelector(".seach-modal");
+        const searchClose = document.querySelector(".close-modall");
+
+        // open
+        searchOpenIcons.addEventListener("click", () => {
+            searchModal.style.display = "block"; // 
+        });
+
+        // close button
+        searchClose.addEventListener("click", () => {
+            searchModal.style.display = "none"; // 
+        });
+
+        const targetDate = new Date().getTime() + (365 * 24 * 60 * 60 * 1000); // 5 din ke baad
+
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const diff = targetDate - now;
+
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+            document.getElementById("days").innerText = days;
+            document.getElementById("hours").innerText = hours;
+            document.getElementById("minutes").innerText = minutes;
+            document.getElementById("seconds").innerText = seconds;
+        }
+
+        setInterval(updateCountdown, 1000);
+
+        // Hover img
+        const hoverImages = document.querySelectorAll(".hover-img");
+
+        hoverImages.forEach(img => {
+            const originalSrc = img.getAttribute("data-original");
+            const hoverSrc = img.getAttribute("data-hover");
+
+            img.addEventListener("mouseenter", () => {
+
+                img.src = hoverSrc;
+
+            });
+
+            img.addEventListener("mouseleave", () => {
+                setTimeout(() => {
+
+                    img.src = originalSrc;
+                }, 300);
+            });
+        });
+
+
+    </script> -->
+
+</body>
+
+</html>
