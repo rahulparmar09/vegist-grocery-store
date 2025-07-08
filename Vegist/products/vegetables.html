@@ -552,8 +552,6 @@
     </section>
 
 
-
-
     <!-- Trending Products Section -->
     <section class="bg-[#f9f9f9] mt-20 px-4 sm:px-8 md:px-16 lg:px-24 py-16" data-aos="fade-up">
         <!-- Heading -->
@@ -1222,9 +1220,6 @@
 
 
 
-
-
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
     <script src="/js/script.js"></script>
     <script src="/js/add.js"></script>
@@ -1239,72 +1234,7 @@
         });
     </script>
 
-    <!-- <script>
-        const searchOpenIcons = document.querySelector(".seach-open"); // sab search icons
-        const searchModal = document.querySelector(".seach-modal");
-        const searchClose = document.querySelector(".close-modall");
-
-        // open
-        searchOpenIcons.addEventListener("click", () => {
-            searchModal.style.display = "block"; // 
-        });
-
-        // close button
-        searchClose.addEventListener("click", () => {
-            searchModal.style.display = "none"; // 
-        });
-
-        // searchopen.addEventListener("click", () => {
-        //     seachModal.classList.remove("hidden");
-        // });
-
-        // seachclose.addEventListener("click", () => {
-        //     seachModal.classList.add("hidden");
-        // });
-
-        const targetDate = new Date().getTime() + (365 * 24 * 60 * 60 * 1000); // 5 din ke baad
-
-        function updateCountdown() {
-            const now = new Date().getTime();
-            const diff = targetDate - now;
-
-            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
-
-            document.getElementById("days").innerText = days;
-            document.getElementById("hours").innerText = hours;
-            document.getElementById("minutes").innerText = minutes;
-            document.getElementById("seconds").innerText = seconds;
-        }
-
-        setInterval(updateCountdown, 1000);
-
-        // Hover img
-        const hoverImages = document.querySelectorAll(".hover-img");
-
-        hoverImages.forEach(img => {
-            const originalSrc = img.getAttribute("data-original");
-            const hoverSrc = img.getAttribute("data-hover");
-
-            img.addEventListener("mouseenter", () => {
-
-                img.src = hoverSrc;
-
-            });
-
-            img.addEventListener("mouseleave", () => {
-                setTimeout(() => {
-
-                    img.src = originalSrc;
-                }, 100);
-            });
-        });
-
-
-    </script> -->
-
+   
 </body>
 
 </html>
