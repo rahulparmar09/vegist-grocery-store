@@ -3,8 +3,6 @@
 A fully responsive modern **Grocery Store Frontend** built using **Tailwind CSS** and **JavaScript**.  
 Includes dynamic cart functionality with localStorage, multiple pages, and clean UI components.
 
-![Screenshot](./preview.png) <!-- Replace with your actual screenshot path -->
-
 ---
 
 ## 🚀 Features
